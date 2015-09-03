@@ -1,0 +1,161 @@
+footer
+    background-color: $black
+    //overflow: hidden
+    color: $hero-cl 
+    line-height: 16px
+    padding: 38px 0 0
+    font: $main-font2
+    +font-size(19)
+    background: #231d1a url("/development/images/pattern_background.jpg") repeat scroll 0 0
+    +clearfix
+    .top
+        // border-bottom: 3px solid #8a8a8a
+        overflow: hidden
+        //margin: 0 -18px
+        //padding: 0 18px 54px
+        .logo
+            +span(5)
+            padding: 20px
+            margin-top: 10px
+            img
+                width: 100%
+            // .menus
+            //     padding-top: 15px
+            //     padding-right: 4px
+            //     ul
+            //         margin: 0
+            //         float: right
+            //         font-size: 12px
+            //         line-height: 21px
+            //         font-weight: bold
+            //         color: #ffffff
+            //         letter-spacing: .5px
+            //         text-transform: uppercase
+            //         display: block
+            //         li
+            //             float: left
+            //             padding: 0
+            //             margin: 0
+            //             list-style: none
+            +breakpoint(0 $small)
+                +span(16)
+                +pad(1,1)
+                padding-top: 0px
+        .menus
+            padding-top: 15px
+            +span(11 at 6 of 16)
+            +breakpoint(0 $small)
+                +span(16)
+                +pad(1,1)
+                padding-top: 5px
+            .menu-nav
+                padding-top: 15px
+                padding-right: 4px
+                font-size: 1.2em
+                line-height: 21px
+                font-weight: $normal
+                color: #ffffff
+                ul
+                    float: right
+                    +breakpoint(0 $small)
+                        +span(16)
+                        padding-bottom: 15px
+                    li
+                        list-style: none
+                        padding-right: 10px
+                        text-align: right
+                        +breakpoint(0 $small)
+                            text-align: center
+                .btn-footer
+                    +sassy-button-structure(10px, 25px)
+                    +sassy-button-gradient("flat", $blue2)
+                    +span(12)
+                    margin-bottom: 20px
+                    line-height: 36px
+                    text-align: center
+                    float: right
+                    +breakpoint(0 $narrow)
+                        +full
+                        +sassy-button-structure(5px, 10px)
+                        line-height: 20px
+                    +breakpoint($narrow $small)
+                        +full
+                        +sassy-button-structure(5px, 15px)
+                        line-height: 20px
+                    +breakpoint($small $medium)
+                        +sassy-button-structure(5px, 15px)
+                        +span(12)
+                        line-height: 20px
+                        float: right
+                    .icon-phone
+                        &:before
+                            content: "\f095"
+                            font-family: FontAwesome
+
+
+                    .icon-edit
+                        &:before
+                            content: "\f044"
+                            font-family: FontAwesome
+
+
+
+    p
+        text-align: left
+        text-rendering: optimizeLegibility
+        font-weight: $thin
+        color: lighten(#676767, 1)
+        padding: 20px
+        float: left
+        border-top: 3px solid #8a8a8a
+        text-indent: 2em
+        +font-size(20)
+        +full
+        +breakpoint(0 $narrow)
+            padding: 20px
+            text-align: center
+        +breakpoint($narrow $small)
+            padding: 20px
+        +breakpoint($small $medium)
+            padding: 20px
+        +breakpoint($medium $wide)
+            padding: 20px
+        +breakpoint($wide $wider)
+            padding: 20px
+    h2
+        color: lighten(#676767, 1)
+        text-align: center
+        font-weight: $thin
+        +font-size(20)
+        padding-bottom: 20px
+
+
+.scrollup
+    width: 50px
+    height: 50px
+    position: fixed
+    bottom: 50px
+    right: 100px
+    display: none
+    text-indent: -9999px
+    background: url('/development/images/icon-arrow-up.png') 5px no-repeat
+    background-color: rgba(0, 0, 0, 0.5)
+    &:hover
+        filter: alpha(opacity=75)
+        opacity: 0.75
+        zoom: 1
+
+
+    +breakpoint(0 $narrow)
+        right: 130px
+        bottom: 10px
+
+
+    +breakpoint($narrow $small)
+        right: 130px
+        bottom: 10px
+
+.fancybox
+    display: none
+
+

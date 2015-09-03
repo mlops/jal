@@ -1,0 +1,63 @@
+section
+    // width: span(8 of 12)
+    // +push(2)
+    width: 100%
+    background-color: $green
+    .nested-item
+        +clearfix
+        +span(4 of 12)
+        //background-color: rgba(green, .3)
+        text-align: center
+        padding: 10px
+        margin-top: 10px
+        //border-style: solid
+        &:last-child
+            +span(12 of 12)
+            margin-top: 10px
+            //background-color: rgba($dark, 0.7)
+            +background-image(linear-gradient(top, $green, $red))
+            +clearfix
+            .about-box
+                color: #fff
+                text-align: center
+                padding: 75px 0 75px
+                font: $main-font1
+                .container
+                    h2
+                        color: $nav-foreground
+                        +font-size(42)
+                        line-height: 36px
+                        font-weight: normal
+                        margin: -2px 0 24px
+                        font-style: italic
+                    hr
+                        border-width: 3px
+                        width: 80%
+                    p
+                        color: $nav-foreground
+                        +font-size(25)
+                        line-height: 30px
+                        font-weight: $thin
+
+                    .help
+                        display: inline-block
+                        height: 38px
+                        vertical-align: top
+                        margin: 25px auto 5px
+                        line-height: 36px
+                        text-align: center
+                        padding: 0 20px
+                        color: $nav-foreground
+                        background-color: #c5a458
+                        font-weight: $thin
+
+                        a
+                            +font-size(28)
+                            padding: 0 6px
+                            display: inline-block
+                            color: $nav-foreground
+                            font-style: italic
+                            text-decoration: none
+
+                            &:hover
+                                color: $blue

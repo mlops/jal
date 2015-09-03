@@ -1,0 +1,39 @@
+# Habilitar o PHP 5.5
+AddHandler application/x-httpd-php55 .php
+
+Action application/x-hg-php55 /cgi-sys/php55
+# Proxy rules for BaseKit site: "joseantonioleite.com.br"
+
+#alias php="/opt/php55/bin/php"
+
+DirectoryIndex index.php default.html index.html
+
+
+<IfModule mod_rewrite.c>
+   <IfModule mod_negotiation.c>
+       Options -MultiViews
+   </IfModule>
+   Options +FollowSymLinks
+   RewriteEngine On
+
+   # Redirect Trailing Slashes...
+  # RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+   # Handle Front Controller...
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteRule ^ index.php [L]
+</IfModule>
+
+<FilesMatch "\.(inc|php|php3|php4|php44|php5|php52|php53|php54|php55|php56|phtml|phps)$">
+
+ #AddHandler x-httpd-php55 .php
+ #Action application/x-hg-php55 /cgi-sys/php55
+ #AddHandler application/x-httpd-php5 .php .html .htm
+
+</FilesMatch>
+ 
+# PHP 5.3 required for Weebly 
+#AddType application/x-httpd-php55 .php
+
+

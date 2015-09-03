@@ -1,0 +1,13 @@
+{
+  "name": "Laravel Application",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.11.2",
+    "bourbon": "7e6e3f22d14641a787f021e985781bff4edf9627",
+    "neat": "1.4.0",
+    "susy": "~2.2.2",
+    "bootstrap-sass-official": "~3.3.4",
+    "fontawesome": "~4.3.0"
+  },
+  "devDependencies": {}
+}

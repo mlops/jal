@@ -1,0 +1,35 @@
+#servicos
+    background-color: $red
+    +backImage('/development/images/10311798423_e729430546_o.jpg', center)
+    .servico
+        ul
+            padding: 0
+            margin: 0
+            vertical-align: middle
+            li
+                float: left
+                display: inline-block
+                a
+                    text-decoration: none
+                    font-style: italic
+                    font-weight: 400
+                    color: $black
+                    font-size: 1.2em
+                    &:hover
+                        color: rgba(red,0.75)
+            .serv-01
+                width: span(8)
+                height: 300px
+                background-color: $blue1
+                padding: 10px
+            .serv-02
+                width: span(8)
+                height: 300px
+                background-color: $orange
+                padding: 10px
+
+            .serv-03
+                +full
+                height: 300px
+                background-color: $grey
+                padding: 10px

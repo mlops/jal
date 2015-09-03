@@ -1,0 +1,47 @@
+section.map
+    +backImage('/development/images/map_pb.jpg', center)
+    //height: 300px
+    position: relative
+    overflow: hidden
+    +clearfix
+    .googleMap
+        position: relative
+        +clearfix
+        address
+            font-weight: 600
+            +span(10)
+            left: 35px
+            top: 35px
+            font-style: normal
+            font-size: 24px
+            line-height: 36px
+            text-transform: uppercase
+            color: $light
+            //background-color: $red
+            padding-bottom: 10px
+            span
+                padding: 8px
+                background-color: $blue1
+                display: inline-block
+                margin-top: 10px
+            +breakpoint(0 $small)
+                //background-color: $orange
+                +span(16)
+                +pad(1,1)
+    #mapa1
+        display: block
+        +span(6)
+        height: 66px
+        // left: 571px
+        // top: 170px
+        margin-top: 135px
+        background: url('/development/images/map_btn.png') no-repeat
+        //background-color: $orange
+        &:hover
+            background-position: left bottom
+            background-position-x: 0%
+            background-position-y: 100%
+        +breakpoint(0 $small)
+            +span(16)
+            margin-top: 5px
+            +push(2)

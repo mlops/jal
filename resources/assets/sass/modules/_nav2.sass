@@ -1,0 +1,170 @@
+header
+    border-bottom: solid $cl-01 10px
+    +box-shadow(2px 2px 5px 0 hsla(0, 0%, 0%, 0.35))
+    .call
+        +container
+        // +breakpoint(0 $small)
+        //     +span(16)
+        //         .call-item
+        //             background-color: $red
+        //             +border-bottom-radius(10px)
+        //     +breakpoint($small $medium)
+        //         +span(8)
+        //             .call-item
+        //                 background-color: $blue
+        //                 +border-bottom-radius(10px)
+
+        .call-item
+            background-color: $blue
+            //text-align: right
+            +clearfix
+            padding: 0 10px 0 10px
+            font: $main-font1
+            font-weight: $normal
+            &:hover
+                background-color: $blue2
+                text-decoration: none
+            h2
+                color: $nav-foreground
+                font-size: 1.2em
+                display: inline
+                +span(8)
+                margin: 10px 0 0 0
+                //text-transform: uppercase
+                text-align: left
+                &:before
+                    content: '\f095'
+                    font-family: FontAwesome
+                    font-size: 1.2em
+                    padding: 2% 1% 2% 2%
+                    line-height: em(10)
+                    //height: em(20)
+                    //margin-top: -9px
+                // +breakpoint(0 $small)
+                //     h2
+                //         color: $nav-foreground
+                //         font: $main-font
+                //         +font-size(25)
+                //         display: inline
+                //         font-weight: $normal
+                //         text-transform: uppercase
+                //         &:before
+                //             content: '\f095'
+                //             font-family: FontAwesome
+                //             +font-size(30)
+                //             padding: 2% 2% 2% 2%
+                //             line-height: em(10)
+                //             //height: em(20)
+                //             //margin-top: -9px
+
+            h3
+                color: $nav-foreground
+                font-size: em(15)
+                display: inline
+                line-height: 33px
+                padding-left: em(12)
+                +span(8)
+                text-align: right
+                margin: 5px 0 0 0
+                &:before
+                    content: '\f003'
+                    font-family: FontAwesome
+                    font-size: 1.2em
+                    line-height: 20px
+                    padding: 0 em(5) 0 0
+
+.logo
+    +span(16)
+    text-align: center
+    //background-color: rgba($red, .8)
+    padding-top: 20px
+    padding-bottom: 10px
+    float: left
+        // +breakpoint(0 $small)
+        //     +span(16)
+        //     text-align: center
+        //     //background-color: rgba($blue, .8)
+        //     a
+        //         display: block
+        //         z-index: 9999
+        //         position: relative
+        //         img
+        //             padding: 5px
+        //         //img 
+        //     //a
+        // //$small
+        // +breakpoint($small $medium)
+        //     +span(8)
+        // a
+        //     display: block
+        //     z-index: 9999
+        //     position: relative
+        //     img
+        //         padding-top: 5px
+            //img
+        //a
+    //.logo
+
+
+
+#nav
+    margin-bottom: 0
+    +span(16)
+    //background-color: rgba($green, .2)
+    .navbar
+        margin-bottom: 0
+        ul
+            //background-color: rgba($orange, .8)
+            list-style: none
+            margin-top: 10px
+            text-align: center
+            margin-bottom: -0.1px
+            padding-left: 3.5%
+            +breakpoint(0 $small)
+                +span(16)
+                text-align: center
+                +pad(2)
+            +breakpoint($small $medium)
+                +span(16)
+                padding-left: 0
+                text-align: center
+                margin-top: 0px
+                //background-color: rgba($orange, .8)
+            li
+                margin-right: 5%
+                display: inline-block
+                vertical-align: top
+                +breakpoint(0 $small)
+                    float: left
+
+                a
+                    color: $nav-background
+                    font: $main-font
+                    font-size: 1.2em
+                    display: block
+                    font-weight: $normal
+                    padding: 8px 10px 10px 10px
+                    text-align: center
+                    text-transform: uppercase
+                    text-decoration: none
+                    &:before
+                        content: '\f0da'
+                        font-family: FontAwesome
+                        top: 12px
+                        font-size: 1.2em
+                        padding: 8px 5px 10px 10px
+                        color: $blue
+                    &:hover
+                        color: $hero-cl
+                        background-color: $cl-01
+                .events
+                    +breakpoint(0 350px)
+                        float: left
+                    +breakpoint(350px $small)
+                        float: left
+                        margin-left: -8px
+
+
+
+
+

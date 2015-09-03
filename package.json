@@ -1,0 +1,22 @@
+{
+  "name": "SinglePageResponsive",
+  "version": "0.0.1",
+  "description": "A website that uses single page responsive CSS with Sass, Compass, Susy 2, etc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planetoftheweb/responsive.git"
+  },
+  "author": "Ray Villalobos",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.0",
+    "gulp-compass": "^1.2.0",
+    "gulp-concat": "^2.3.4",
+    "gulp-if": "^1.2.4",
+    "gulp-minify-html": "^0.1.4",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^2.2.20",
+    "jquery": "^2.1.1"
+  }
+}

@@ -1,0 +1,46 @@
+
+$off-wht: rgba(white, 0.4)
+
+=btn-theme($btn-color)
+  //border-color: darken($btn-color, 20%)
+  background-color: $btn-color
+  &:hover
+    color: $blue1
+    background-color: darken($btn-color, 6%)
+    box-shadow: 0 0.125em $off-wht, inset 0 0.063em $off-wht, inset 0 -0.188em lighten($btn-color, 2%)
+  &:active
+    //box-shadow: 0 0.063em $off-wht, inset 0 0 1.094em darken($btn-color, 40%), inset 0 0.063em darken($btn-color, 20%), inset 0 -0.188em darken($btn-color, 20%)
+
+=trans($val...)
+  -webkit-transition: $val
+  -moz-transition: $val
+  -o-transition: $val
+  transition: $val
+
+.btn
+  display: inline-block
+  margin: 1rem
+  padding: .938em 1.875em
+  border: .094em solid
+  border-radius: .625em
+  //box-shadow: 0 0.375em 0.313em -0.313em rgba(black, 0.8), inset 0 0.063em $off-wht, inset 0 -0.188em rgba(black, 0.15)
+  // color: #FFF
+  // font: bold 1.8rem sans-serif
+  //+trans(0.2s ease-in-out)
+  // text:
+  //   transform: uppercase
+  //   decoration: none
+  //   shadow: 0 0.063em rgba(black, 0.3)
+  // cursor: pointer
+
+.red
+  +btn-theme($red)
+
+.blue
+  +btn-theme($blue1)
+
+.green
+  +btn-theme($green)
+
+.orange
+  +btn-theme($orange)

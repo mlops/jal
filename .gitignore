@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+/public/fonts
+/public/development/images
+/public/development/fonts
+/public/fonts
+/resources/assets/images
+/resources/assets/fonts
+/resources/assets/sass/vendor
+.sass-cache
+.env
