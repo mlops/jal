@@ -53,7 +53,7 @@ gulp.task('compass', function() {
       require: ['susy', 'breakpoint', 'sassy-buttons']
     })
     .on('error', gutil.log))
-//    .pipe(gulp.dest( outputDir + 'css'))
+   .pipe(gulp.dest( outputDir + 'css'))
     //.pipe(connect.reload())
     // .pipe(reload({stream: true}))
 });

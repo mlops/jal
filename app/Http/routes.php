@@ -40,11 +40,11 @@ use Illuminate\Support\Facades\Mail;
     return view('index1');
 
 });
- Route::get('phpinfo', function() {
+ // Route::get('phpinfo', function() {
 
- return view('phpinfo');
+ // return view('phpinfo');
 
- });
+ // });
 
 Route::post('mail_contact','MailController@sendMail');
 
